@@ -24,3 +24,12 @@ While widely used it does have some limitations.
 *Picture here*
 
 I wanted to know more about the Firewalls being able to detect and block SYN scans and I found out that some firewalls reject packets isntead of dropping them to fool the scan into thinking that the port is closed instead of filtered. I found that pretty creative!
+
+UDP Scans (-sU) 
+- While much less reliable than the other scans and being stateless, one would wonder why anyone would use them. I decided to find out!
+- As it turns out UDP scans can be an internet threat. DoS attacks work much better on UDP for example.
+- When it comes to UDP scanning, it will send a packet and wait, in this case if no response is found the port is assumed to be open since a closed port would commonly result in an ICMP error packet being returned.
+- After establishing that a UDP port is open, it sends a UDP packet specific to the services on that open port to detect which service it is.
+
+* Picture Here of Scan *
+* Picture Here of Wireshark?
