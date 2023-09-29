@@ -1,6 +1,1 @@
-This project was completed in July but I wanted to document what I've learned about Nmap. 
 
-Project purpose: 
-  - Verify the Nmap installation and Nmap version that are installed on a system by using the terminal. 
-  - Identification of potential vulnerabilities on a network.
-  - Exploration of Nmap scanning of a network to discover active hosts, open ports and other running services.
